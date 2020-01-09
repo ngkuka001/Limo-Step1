@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/custom-style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="block-profile">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 limo-wrapper col-md-offset-3">
+
+                    <!-- Step button -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="d-flex justify-content-between step-wrapper">
+                                <div class="d-flex align-items-center flex-column">
+                                    <div class="limo-step active">1</div>
+                                    <div class="text-center step-title">
+                                        <span>pick-up</span>
+                                        <br>
+                                        <span>Drop-offf</span>
+                                    </div>
+                                </div>
+                                <div class="gap-line"></div>
+                                <div class="d-flex align-items-center flex-column">
+                                    <div class="limo-step">2</div>
+                                    <div class="step-title">
+                                        Quote
+                                    </div>
+                                </div>
+                                <div class="gap-line"></div>
+                                <div class="d-flex align-items-center flex-column">
+                                    <div class="limo-step">3</div>
+                                    <div class="step-title">
+                                        Passenger
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- indicates mandatory -->
+                    <div class="row mt-30">
+                        <div class="col-md-12">
+                            <label for="" class="col-gray">
+                                <span class="txt-red"> *</span> indicates mandatory
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pick-up location -->
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="form-group">
+                                <label class="" for="Location" id="pickup-location">Pick-up Location<span class="txt-red">
+                                        *</span></label>
+                                <div role="application" class="box-group">
+                                    <div class="input-group-before">
+                                        <span class="sprites icon-global-xs"></span>
+                                    </div>
+                                    <input class="form-control form-control" type="text"
+                                        placeholder="Please enter pick-up location" id="pickup-location"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <span class="sprites icon-global-xs"></span>
+                    </div>
+
+                    <!-- Drop-off Location -->
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="form-group">
+                                <label class="" for="Location" id="lblLocation">Drop-off Location<span class="txt-red">
+                                        *</span></label>
+                                <div role="application" class="box-group">
+                                    <div class="input-group-before">
+                                        <span class="sprites icon-global-xs"></span>
+                                    </div>
+                                    <input class="form-control form-control" type="text"
+                                        placeholder="Please enter drop-off location" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Flight Wrapper -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="" for="Location" id="lblLocation">Flight No.<span class="txt-red">
+                                        *</span></label>
+                                <div role="application" class="box-group">
+                                    <div class="input-group-before">
+                                        <span class="sprites icon-global-xs"></span>
+                                    </div>
+                                    <input class="form-control form-control" type="text" placeholder="Fight No" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="" for="Location" id="lblLocation">Flight Date<span class="txt-red">
+                                        *</span></label>
+                                <div role="application" class="box-group">
+                                    <div class="input-group-before">
+                                        <span class="sprites icon-global-xs"></span>
+                                    </div>
+                                    <input class="form-control form-control" type="text" placeholder="Flight Date" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Terminal -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="" for="Location" id="lblLocation">Terminal<span class="txt-red">
+                                        *</span></label>
+                                <div role="application" class="box-group">
+                                    <div class="input-group-before">
+                                        <span class="sprites icon-global-xs"></span>
+                                    </div>
+                                    <input class="form-control form-control" type="text" placeholder="Terminal" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="" for="Location" id="lblLocation">ETA/ETD<span class="txt-red">
+                                        *</span></label>
+                                <div role="application" class="box-group">
+                                    <div class="input-group-before">
+                                        <span class="sprites icon-global-xs"></span>
+                                    </div>
+                                    <input class="form-control form-control" type="text" placeholder="ETA/ETD" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Flight information -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <divc class="d-flex justify-content-between">
+                                <div>
+                                    <span class="sprites icon-global-xs"></span>
+                                    <span>Flight information</span>
+                                </div>
+                                <div>
+                                    <span class="sprites icon-global-xs"></span>
+                                </div>
+                            </divc>
+
+                            <!-- Flight Form -->
+                            <div class="flight-information-wrapper pd-20">
+                                <div class="row flight-airline mb-20">
+                                    <div class="col-xs-3">
+                                        <span>Airline</span>
+                                    </div>
+                                    <div class="col-xs-9">
+                                        <span>Singapore Airlines</span>
+                                    </div>
+                                </div>
+
+                                <div class="flight-info-content">
+                                    <!-- From -->
+                                    <div>
+                                        <b>From</b>
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <span>
+                                                    Airport
+                                                </span>
+                                            </div>
+                                            <div class="col-xs-9">
+                                                <span>
+                                                    Changi Airport
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <span>
+                                                    Location
+                                                </span>
+                                            </div>
+                                            <div class="col-xs-9">
+                                                <span>
+                                                    Singapore, Singapore
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <span>
+                                                    Terminal
+                                                </span>
+                                            </div>
+                                            <div class="col-xs-9">
+                                                <span>
+                                                    3
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <span>
+                                                    Gate
+                                                </span>
+                                            </div>
+                                            <div class="col-xs-9">
+                                                <span>
+                                                    9
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- To -->
+                                    <div>
+                                        <div class="mt-20">
+                                            <b>To</b>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <span>
+                                                    Airport
+                                                </span>
+                                            </div>
+                                            <div class="col-xs-9">
+                                                <span>
+                                                    Narita International Airport
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <span>
+                                                    Location
+                                                </span>
+                                            </div>
+                                            <div class="col-xs-9">
+                                                <span>
+                                                    Tokyo, Japan
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <span>
+                                                    Terminal
+                                                </span>
+                                            </div>
+                                            <div class="col-xs-9">
+                                                <span>
+                                                    T
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <span>
+                                                    Gate
+                                                </span>
+                                            </div>
+                                            <div class="col-xs-9">
+                                                <span>
+                                                    T
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- aircraft -->
+                                <div class="row flight-aircarft mt-20">
+                                    <div class="col-xs-3">
+                                        <span>Aircraft</span>
+                                    </div>
+                                    <div class="col-xs-9">
+                                        <span>Boeing 800</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pick-up Date & Time -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="" for="Location" id="lblLocation">Pick-up Date<span class="txt-red">
+                                        *</span></label>
+                                <div role="application" class="box-group">
+                                    <div class="input-group-before">
+                                        <span class="sprites icon-global-xs"></span>
+                                    </div>
+                                    <input class="form-control form-control" type="text" placeholder="Date Picker" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="" for="Location" id="lblLocation">Pick-up Time<span class="txt-red">
+                                        *</span></label>
+                                <div role="application" class="box-group">
+                                    <div class="input-group-before">
+                                        <span class="sprites icon-global-xs"></span>
+                                    </div>
+                                    <input class="form-control form-control" type="text" placeholder="Time picker" />
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="sprites icon-global-xs"></span>
+                            <label>Midnight transfer applies where applicable</label>
+                        </div>
+                    </div>
+
+                    <!-- Vehicle Type -->
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div>
+                                Vehicle Type
+                            </div>
+                            <div>
+                                <div class="vehicle-type form-group d-flex justify-content-between">
+                                    <div class="box-group d-flex align-items-center">
+                                        <input type="radio">
+                                        <label class="radio">Executive</label>
+                                    </div>
+                                    <div class="box-group d-flex align-items-center">
+                                        <input type="radio">
+                                        <label class="radio">Luxury</label>
+                                    </div>
+                                    <div class="box-group d-flex align-items-center">
+                                        <input type="radio">
+                                        <label class="radio">SUV</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Special Requests -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div>Special Requests</div>
+
+                            <!-- baby seat -->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>Baby Seat</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="box-group short-input">
+                                        <div role="button" class="input-group-before bg-light lt-spinner-prev">
+                                            <span class="sprites icon-minus-dark"></span>
+                                        </div>
+                                        <input class="form-control text-center lt-spinner text-box single-line"
+                                            type="number" value="0" aria-required="true">
+                                        <div role="button" title="Increase"
+                                            class="input-group-after bg-light lt-spinner-next">
+                                            <span class="sprites icon-plus-dark"></span>
+                                        </div>
+                                        <label>
+                                            Recommended for children under the age of 3
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Child seat -->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>Child Seat</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="box-group short-input">
+                                        <div role="button" class="input-group-before bg-light lt-spinner-prev">
+                                            <span class="sprites icon-minus-dark"></span>
+                                        </div>
+                                        <input class="form-control text-center lt-spinner text-box single-line"
+                                            type="number" value="0" aria-required="true">
+                                        <div role="button" title="Increase"
+                                            class="input-group-after bg-light lt-spinner-next">
+                                            <span class="sprites icon-plus-dark"></span>
+                                        </div>
+                                        <label>
+                                            Recommended for children under the age of 4 - 10
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div>Notes to Driver</div>
+                            <div class="form-group">
+                                <div role="application" class="box-group">
+                                    <input class="form-control" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="row">
+                        <div class="btn-wrapper">
+                            <button class="btn">Get quote</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</body>
+
+</html>
