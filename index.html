@@ -59,14 +59,16 @@
                     <div class="row">
                         <div class="col-md-12 ">
                             <div class="form-group">
-                                <label class="" for="Location" id="pickup-location">Pick-up Location<span class="txt-red">
-                                        *</span></label>
+                                <label for="pickup-location">
+                                    Pick-up Location
+                                    <span class="txt-red">*</span>
+                                </label>
                                 <div role="application" class="box-group">
                                     <div class="input-group-before">
                                         <span class="sprites icon-global-xs"></span>
                                     </div>
                                     <input class="form-control form-control" type="text"
-                                        placeholder="Please enter pick-up location" id="pickup-location"/>
+                                        placeholder="Please enter pick-up location" id="pickup-location" />
                                 </div>
                             </div>
                         </div>
@@ -79,13 +81,16 @@
                     <div class="row">
                         <div class="col-md-12 ">
                             <div class="form-group">
-                                <label class="" for="Location" id="lblLocation">Drop-off Location<span class="txt-red">
-                                        *</span></label>
+                                <label for="drop-off-location">
+                                    Drop-off Location
+                                    <span class="txt-red">
+                                        *</span>
+                                </label>
                                 <div role="application" class="box-group">
                                     <div class="input-group-before">
                                         <span class="sprites icon-global-xs"></span>
                                     </div>
-                                    <input class="form-control form-control" type="text"
+                                    <input id="drop-off-location" class="form-control form-control" type="text"
                                         placeholder="Please enter drop-off location" />
                                 </div>
                             </div>
@@ -96,25 +101,29 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="" for="Location" id="lblLocation">Flight No.<span class="txt-red">
-                                        *</span></label>
+                                <label for="flight-no">Flight No.
+                                    <span class="txt-red"> *</span>
+                                </label>
                                 <div role="application" class="box-group">
                                     <div class="input-group-before">
                                         <span class="sprites icon-global-xs"></span>
                                     </div>
-                                    <input class="form-control form-control" type="text" placeholder="Fight No" />
+                                    <input id="flight-no" class="form-control form-control" type="text"
+                                        placeholder="Fight No" />
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="" for="Location" id="lblLocation">Flight Date<span class="txt-red">
-                                        *</span></label>
+                                <label for="flight-date">Flight Date
+                                    <span class="txt-red">*</span>
+                                </label>
                                 <div role="application" class="box-group">
                                     <div class="input-group-before">
                                         <span class="sprites icon-global-xs"></span>
                                     </div>
-                                    <input class="form-control form-control" type="text" placeholder="Flight Date" />
+                                    <input id="flight-date" class="form-control form-control" type="text"
+                                        placeholder="Flight Date" />
                                 </div>
                             </div>
                         </div>
@@ -124,42 +133,46 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="" for="Location" id="lblLocation">Terminal<span class="txt-red">
-                                        *</span></label>
+                                <label for="terminal">Terminal
+                                    <span class="txt-red">*</span>
+                                </label>
                                 <div role="application" class="box-group">
                                     <div class="input-group-before">
                                         <span class="sprites icon-global-xs"></span>
                                     </div>
-                                    <input class="form-control form-control" type="text" placeholder="Terminal" />
+                                    <input id="terminal" class="form-control form-control" type="text"
+                                        placeholder="Terminal" />
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="" for="Location" id="lblLocation">ETA/ETD<span class="txt-red">
-                                        *</span></label>
+                                <label for="eta-etd">ETA/ETD
+                                    <span class="txt-red">*</span>
+                                </label>
                                 <div role="application" class="box-group">
                                     <div class="input-group-before">
                                         <span class="sprites icon-global-xs"></span>
                                     </div>
-                                    <input class="form-control form-control" type="text" placeholder="ETA/ETD" />
+                                    <input id="eta-etd" class="form-control form-control" type="text"
+                                        placeholder="ETA/ETD" />
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Flight information -->
-                    <div class="row">
+                    <div aria-labelledby="flight-information-title" class="row">
                         <div class="col-md-12">
-                            <divc class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-between">
                                 <div>
                                     <span class="sprites icon-global-xs"></span>
-                                    <span>Flight information</span>
+                                    <span id="flight-information-title">Flight information</span>
                                 </div>
                                 <div>
                                     <span class="sprites icon-global-xs"></span>
                                 </div>
-                            </divc>
+                            </div>
 
                             <!-- Flight Form -->
                             <div class="flight-information-wrapper pd-20">
@@ -175,7 +188,7 @@
                                 <div class="flight-info-content">
                                     <!-- From -->
                                     <div>
-                                        <b>From</b>
+                                        <trong>From</trong>
                                         <div class="row">
                                             <div class="col-xs-3">
                                                 <span>
@@ -232,7 +245,7 @@
                                     <!-- To -->
                                     <div>
                                         <div class="mt-20">
-                                            <b>To</b>
+                                            <trong>To</trong>
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-3">
@@ -302,28 +315,32 @@
                     </div>
 
                     <!-- Pick-up Date & Time -->
-                    <div class="row">
+                    <div class="row mt-20">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="" for="Location" id="lblLocation">Pick-up Date<span class="txt-red">
-                                        *</span></label>
+                                <label for="pick-up-date">Pick-up Date
+                                    <span class="txt-red">*</span>
+                                </label>
                                 <div role="application" class="box-group">
                                     <div class="input-group-before">
                                         <span class="sprites icon-global-xs"></span>
                                     </div>
-                                    <input class="form-control form-control" type="text" placeholder="Date Picker" />
+                                    <input id="pick-up-date" class="form-control form-control" type="text"
+                                        placeholder="Date Picker" />
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="" for="Location" id="lblLocation">Pick-up Time<span class="txt-red">
-                                        *</span></label>
+                                <label for="pick-up-time">Pick-up Time
+                                    <span class="txt-red">*</span>
+                                </label>
                                 <div role="application" class="box-group">
                                     <div class="input-group-before">
                                         <span class="sprites icon-global-xs"></span>
                                     </div>
-                                    <input class="form-control form-control" type="text" placeholder="Time picker" />
+                                    <input id="pick-up-time" class="form-control form-control" type="text"
+                                        placeholder="Time picker" />
                                 </div>
                             </div>
                         </div>
@@ -336,44 +353,45 @@
                     <!-- Vehicle Type -->
                     <div class="row">
                         <div class="col-md-12 ">
-                            <div>
-                                Vehicle Type
-                            </div>
-                            <div>
-                                <div class="vehicle-type form-group d-flex justify-content-between">
-                                    <div class="box-group d-flex align-items-center">
-                                        <input type="radio">
-                                        <label class="radio">Executive</label>
-                                    </div>
-                                    <div class="box-group d-flex align-items-center">
-                                        <input type="radio">
-                                        <label class="radio">Luxury</label>
-                                    </div>
-                                    <div class="box-group d-flex align-items-center">
-                                        <input type="radio">
-                                        <label class="radio">SUV</label>
+                            <fieldset>
+                                <legend>Vehicle Type</legend>
+                                <div>
+                                    <div class="vehicle-type form-group d-flex justify-content-between">
+                                        <div class="box-group d-flex align-items-center">
+                                            <input id="vehicle-excutive" type="radio" name="vehicle-type">
+                                            <label for="vehicle-excutive" class="radio">Executive</label>
+                                        </div>
+                                        <div class="box-group d-flex align-items-center">
+                                            <input id="vehicle-luxury" type="radio" name="vehicle-type">
+                                            <label for="vehicle-luxury" class="radio">Luxury</label>
+                                        </div>
+                                        <div class="box-group d-flex align-items-center">
+                                            <input id="vehicle-suv" type="radio" name="vehicle-type">
+                                            <label for="vehicle-suv" class="radio">SUV</label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </fieldset>
                         </div>
                     </div>
 
                     <!-- Special Requests -->
                     <div class="row">
-                        <div class="col-md-12">
-                            <div>Special Requests</div>
+                        <div class="col-md-12" role="group" aria-labelledby="special-request-head">
+                            <div id="special-request-head">Special Requests</div>
 
                             <!-- baby seat -->
                             <div class="row">
-                                <div class="col-md-4">
-                                    <label>Baby Seat</label>
+                                <div class="col-xs-4">
+                                    <label for="baby-seat">Baby Seat</label>
                                 </div>
-                                <div class="col-md-8">
-                                    <div class="box-group short-input">
+                                <div class="col-xs-8">
+                                    <div class="box-group short-input text-right">
                                         <div role="button" class="input-group-before bg-light lt-spinner-prev">
                                             <span class="sprites icon-minus-dark"></span>
                                         </div>
-                                        <input class="form-control text-center lt-spinner text-box single-line"
+                                        <input id="baby-seat"
+                                            class="form-control text-center lt-spinner text-box single-line"
                                             type="number" value="0" aria-required="true">
                                         <div role="button" title="Increase"
                                             class="input-group-after bg-light lt-spinner-next">
@@ -387,16 +405,17 @@
                             </div>
 
                             <!-- Child seat -->
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <label>Child Seat</label>
+                            <div class="row mt-20">
+                                <div class="col-xs-4">
+                                    <label for="child-seat">Child Seat</label>
                                 </div>
-                                <div class="col-md-8">
-                                    <div class="box-group short-input">
+                                <div class="col-xs-8">
+                                    <div class="box-group short-input text-right">
                                         <div role="button" class="input-group-before bg-light lt-spinner-prev">
                                             <span class="sprites icon-minus-dark"></span>
                                         </div>
-                                        <input class="form-control text-center lt-spinner text-box single-line"
+                                        <input id="child-seat"
+                                            class="form-control text-center lt-spinner text-box single-line"
                                             type="number" value="0" aria-required="true">
                                         <div role="button" title="Increase"
                                             class="input-group-after bg-light lt-spinner-next">
@@ -413,11 +432,10 @@
 
                     <div class="row">
                         <div class="col-md-12">
-                            <div>Notes to Driver</div>
-                            <div class="form-group">
-                                <div role="application" class="box-group">
-                                    <input class="form-control" type="text" />
-                                </div>
+                            <label for="note-to-driver">Notes to Driver</div>
+                        <div class="form-group">
+                            <div role="application" class="box-group">
+                                <input id="note-to-driver" class="form-control" type="text" />
                             </div>
                         </div>
                     </div>
@@ -430,6 +448,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 </body>
 

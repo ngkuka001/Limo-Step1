@@ -21,11 +21,6 @@
     flex-direction: column!important;
 }
 
-.text-align-end {
-    text-align: end;
-}
-
-
 /* ---New css--- */
 
 .flight-info-content {
@@ -74,7 +69,9 @@
     text-align: end;
 }
 
+
 /* Responsive Mobile */
+
 @media screen and (max-width: 768px) {
     .limo-wrapper .vehicle-type {
         flex-direction: column;
