@@ -31,7 +31,7 @@
     border-right: none;
 }
 
-.flight-information-wrapper {
+.form-detail-wrapper {
     background-color: #F7F7F7;
     width: auto;
 }
@@ -79,4 +79,13 @@
     .limo-wrapper .btn-wrapper {
         text-align: center;
     }
+}
+
+.limo-step-2 .vehicle-type-wrapper .vehicle-item .img-vehicle{
+    width: 100%;
+}
+
+.limo-step-2 .vehicle-type-wrapper .vehicle-item {
+    flex: 1;
+    padding:10px;
 }
